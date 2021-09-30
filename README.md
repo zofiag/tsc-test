@@ -5,6 +5,7 @@ Comparison of the `tsc diagnostics`:
 1. `tsc -b api/tsconfig.json -w --preserveWatchOutput` (or run `npm run dev:api:b`)
 Much slower.
 
+```
 Files:                         412
 Lines of Library:             8664
 Lines of Definitions:       577202
@@ -41,11 +42,13 @@ Emit time:                   0.04s
 Source Map time:             0.00s
 I/O Write time:              0.00s
 Total time:                  4.20s
+```
 
 
 2. `tsc -p api/tsconfig.json -w --preserveWatchOutput` (or run `npm run dev:api:p`)
 Much faster.
 
+```
 Files:                         412
 Lines of Library:             8664
 Lines of Definitions:       577202
@@ -81,3 +84,4 @@ Emit time:                   0.05s
 Source Map time:             0.00s
 I/O Write time:              0.00s
 Total time:                  0.11s
+```
